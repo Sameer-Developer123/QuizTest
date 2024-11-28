@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="Main_Container" id="MainContainer" >
+
+        <div class="Quiz_App">
+
+            <div class="Quiz_Heading">
+                <div>
+                    <h2>Quiz Application</h2>
+                </div>
+
+                <div class="timer">
+                    <label for="">Timer</label>
+                    <p id="timer">60</p>
+
+                </div>
+
+            </div>
+
+            <div class="Question_Num">
+                <h2 id="QuestionCount"></h2>
+
+            </div>
+
+
+
+            <div class="Question_Con">
+                <h2 id="Question"></h2>
+            </div>
+
+            <div class="option_Container" id="option_Container">
+                <ul>
+                    <li><input type="radio" id="a" name="option" onclick="Enablebtn() ">
+                        <label for="a" id="option1"></label>
+                    </li>
+                    <li><input type="radio" id="b" name="option" onclick="Enablebtn() ">
+                        <label for="b" id="option2"></label>
+                    </li>
+                    <li><input type="radio" id="c" name="option" onclick="Enablebtn() ">
+                        <label for="c" id="option3"></label>
+                    </li>
+                    <li><input type="radio" id="d" name="option" onclick="Enablebtn() ">
+                        <label for="d" id="option4"></label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Nextbtn">
+              
+                <button id="Nextbtn" onclick="Nextbtn()" disabled class="Next">Next</button>
+                <button id="Resultbtn" onclick="Result()" disabled class="Resutbtn">Results</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="Result_mainContainer" id="resultmainContainer" style="display: none;">
+        <div class="ResultMain">
+
+            <div class="Result_Hea">
+                <h1>Result</h1>
+            </div>  
+
+            <div class="Img_COn">
+                <h2>You Have Completed The Quiz</h2>
+            </div>
+
+            <div class="Result_Chart_Con">
+                <div class="Result_Chart">
+                    <h3>Quiz Name :</h3>
+                    <p>Programming Quiz</p>
+                </div>
+                <div class="Result_Chart">
+                    <h3>Total Time :</h3>
+                    <p>60 Sec</p>
+                </div>
+                <div class="Result_Chart">
+                    <h3>Total Question :</h3>
+                    <p>10</p>
+                </div>
+                <div class="Result_Chart">
+                    <h3>Total Points :</h3>
+                    <p> 100</p>
+                </div>
+                <div class="Result_Chart">
+                    <h3>Obtain Points :</h3>
+                    <p id="obtPoints"></p>
+                </div>
+                <div class="Result_Chart">
+                    <h3>Correct Answers :</h3>
+                    <p id="CorrectAns"> </p>
+                </div>
+                <div class="Result_Chart">
+                    <h3> Wrong Answers :</h3>
+                    <p id="WrongAns"> </p>
+                </div>
+            </div>
+
+
+
+            <div class="Result_Paas_Fail">
+                <h2>Result :</h2>
+                <p id="result">Pass</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
